@@ -14,49 +14,77 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidepicture"></div>
-      <img src="./imgs/cosmic-timetraveler-ik2BN5dI6tE-unsplash.jpg" alt="" />
+      <div class="left-side">
+        <div class="logo-container"></div>
+        <img
+          src="./imgs/cosmic-timetraveler-ik2BN5dI6tE-unsplash.jpg"
+          alt="Background Image"
+          class="background-image"
+        />
+        <div class="logo">
+          <img src="./imgs/odin-lined.png" alt="logo" />
+        </div>
+      </div>
 
       <div class="right-side">
         <section class="section-1">
           <h1>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            now and get started.
+            This is not a real online service! You know you need something
+            <br />like this in your life to help you realize your deepest
+            dreams. <br />Sign up <span id="italic">now</span> and get started.
           </h1>
           <br />
-          <h2>You know you want to.</h2>
+          <h2>You <span id="italic">know</span> you want to.</h2>
         </section>
         <section class="form">
           <h3>Let's do this!</h3>
           <form action="">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" />
+            <div class="row">
+              <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" />
+              </div>
+              <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" />
+              </div>
+            </div>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" />
+            <div class="row">
+              <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+              </div>
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" />
+              <div class="input-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" />
+              </div>
+            </div>
 
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" />
+            <div class="row">
+              <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+              </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" />
-
-            <label for="confirmPassword">Confirm Password:</label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-            />
+              <div class="input-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                />
+              </div>
+            </div>
           </form>
         </section>
 
         <section class="last-section">
           <button>Create Account</button>
-          <span>Already have an account? Log in</span>
+          <span
+            >Already have an account? <a href="#" class="login">Log in</a></span
+          >
         </section>
       </div>
     </div>
